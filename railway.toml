@@ -1,0 +1,6 @@
+[build]
+builder = "NIXPACKS"
+command = "DATABASE_URL=${DATABASE_URL} CLIENT_URL=${CLIENT_URL} NODE_ENV=production npm run build"
+
+[deploy]
+startCommand = "npm start"
